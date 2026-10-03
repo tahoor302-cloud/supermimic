@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Product Catalogue | SikandarTech</title>
+  <meta name="description" content="Browse advanced tech and gadgets sourced direct from China: AI devices, computers, wearables, audio, cameras, drones, robotics, smart home and more. Request factory quotes on WhatsApp.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://sikandartech.com/products.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SikandarTech">
+  <meta property="og:title" content="Product Catalogue | SikandarTech">
+  <meta property="og:description" content="640+ advanced tech products in 24 categories, sourced direct from China.">
+  <meta property="og:url" content="https://sikandartech.com/products.html">
+  <link rel="preload" href="fonts/unbounded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23ff5a1f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2213%22 text-anchor=%22middle%22 fill=%22%23000%22%3EST%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="shop-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="SikandarTech home"><span class="logo-mark">ST</span><span class="logo-text">Sikandar<span>Tech</span></span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="products.html" class="active" aria-current="page">Collection</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="ugc.html">Show Your Tech</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-open-drawer="saved" aria-label="Saved products"><span data-ui-icon="heart"></span><span class="count" data-count="saved"></span></button>
+        <button class="icon-btn" data-open-drawer="quote" aria-label="Quote list"><span data-ui-icon="shopping-bag"></span><span class="count" data-count="quote"></span></button>
+        <button class="icon-btn nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links" data-ui-icon="menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+      <div>
+        <p class="label" id="shop-kicker">Collection</p>
+        <h1 id="shop-title"><span class="mask in"><span>All products</span></span></h1>
+        <p id="shop-tagline">Advanced tech and gadgets sourced direct from China, with quality inspection and worldwide shipping.</p>
+      </div>
+      <div class="shop-hero-media" id="shop-hero-media" hidden></div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="container shop-layout">
+        <aside class="shop-sidebar" aria-label="Categories">
+          <h2>Categories</h2>
+          <nav id="cat-list"></nav>
+        </aside>
+
+        <div class="shop-main">
+          <div class="shop-toolbar">
+            <label class="search-wrap">
+              <span class="sr-only">Search products</span>
+              <span data-ui-icon="search"></span>
+              <input type="search" id="shop-search" placeholder="Search products..." autocomplete="off">
+            </label>
+            <div class="status-filter" id="status-filter" role="group" aria-label="Availability">
+              <button class="chip" data-status="all" aria-pressed="true">All</button>
+              <button class="chip" data-status="available" aria-pressed="false">Available now</button>
+              <button class="chip" data-status="coming" aria-pressed="false">Coming soon</button>
+              <button class="chip" data-status="emerging" aria-pressed="false">Emerging</button>
+            </div>
+          </div>
+          <div class="cat-chips" id="cat-chips"></div>
+          <p class="result-count" id="shop-count" aria-live="polite"></p>
+          <div class="product-grid" id="shop-grid"></div>
+          <div class="center-cta"><button class="btn btn-line" id="load-more">Load more</button></div>
+          <p class="spec-note">Specifications shown are typical for each product type. Exact brand, model, price and MOQ are confirmed in your quotation. Product pictures are illustrations until product photos are added.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><span>© <span data-year></span> SikandarTech · Bringing tomorrow’s tech today</span><span><a href="index.html#contact">Contact</a> · <a data-wa target="_blank" rel="noopener">WhatsApp</a></span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-ui-icon="brand-whatsapp"></a>
+
+  <script src="icons.js"></script>
+  <script src="catalog.js"></script>
+  <script src="script.js"></script>
+  <script src="shop-core.js"></script>
+  <script src="product-info.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>

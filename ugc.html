@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Show Us Your Tech | SikandarTech Community</title>
+  <meta name="description" content="Watch real setups from the SikandarTech community and share your own photos and videos of the tech you sourced with us.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://sikandartech.com/ugc.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SikandarTech">
+  <meta property="og:title" content="Show Us Your Tech | SikandarTech">
+  <meta property="og:description" content="Real setups from the SikandarTech community. Share yours.">
+  <meta property="og:url" content="https://sikandartech.com/ugc.html">
+  <link rel="preload" href="fonts/unbounded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23ff5a1f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2213%22 text-anchor=%22middle%22 fill=%22%23000%22%3EST%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="ugc-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="SikandarTech home"><span class="logo-mark">ST</span><span class="logo-text">Sikandar<span>Tech</span></span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="products.html">Collection</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="ugc.html" class="active" aria-current="page">Show Your Tech</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-open-drawer="saved" aria-label="Saved products"><span data-ui-icon="heart"></span><span class="count" data-count="saved"></span></button>
+        <button class="icon-btn" data-open-drawer="quote" aria-label="Quote list"><span data-ui-icon="shopping-bag"></span><span class="count" data-count="quote"></span></button>
+        <button class="icon-btn nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links" data-ui-icon="menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero ugc-hero">
+      <div class="container">
+        <p class="label">Community</p>
+        <h1><span class="mask in"><span>Show us</span></span><span class="mask in"><span class="o">your tech</span></span></h1>
+        <p>Real setups from people who sourced their gadgets with SikandarTech. Watch, find the exact product, and add it to your quote list.</p>
+        <div class="hero-ctas" style="opacity:1;transform:none"><a class="btn" href="#share">Share your setup <span data-ui-icon="arrow-right"></span></a><a class="btn btn-line" href="#feed">Watch the feed</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="feed" aria-labelledby="feed-title" style="padding-top:70px">
+      <div class="container">
+        <div class="s-head">
+          <div><p class="label rv">01 — Feed</p><h2 id="feed-title"><span class="mask"><span>Community</span></span><span class="mask"><span style="--d:.08s"><em>feed</em></span></span></h2></div>
+          <p class="rv" id="feed-sub">Videos play muted as you scroll. Tap for sound; only one plays with sound at a time.</p>
+        </div>
+        <div class="wall-tabs" id="feed-tabs" role="group" aria-label="Filter feed" hidden></div>
+        <div class="ugc-feed" id="ugc-feed"></div>
+      </div>
+    </section>
+
+    <section class="section community" id="share" aria-labelledby="share-title">
+      <div class="container submit-grid">
+        <div>
+          <p class="label rv">02 — Share</p>
+          <div class="s-head" style="grid-template-columns:1fr;margin-bottom:24px"><h2 id="share-title"><span class="mask"><span>Share your</span></span><span class="mask"><span style="--d:.08s"><em>setup</em></span></span></h2></div>
+          <p class="rv">Send a photo or short video of the tech you bought through us: your desk, studio, gaming corner, home or workshop.</p>
+          <ul class="rules rv">
+            <li><span>01</span>Show the product clearly. Portrait video (9:16) up to 60 seconds works best.</li>
+            <li><span>02</span>Only share content you created and have the right to share.</li>
+            <li><span>03</span>We review every submission before anything is published, and credit you by your handle.</li>
+            <li><span>04</span>Keep personal details, screens with private information and other people’s faces out of frame unless they agree.</li>
+          </ul>
+        </div>
+
+        <form class="form rv" id="ugc-form" novalidate>
+          <div class="row2">
+            <label class="field"><span>Your name *</span><input name="name" required autocomplete="name"><small class="err"></small></label>
+            <label class="field"><span>Display handle</span><input name="handle" placeholder="@yourhandle"><small class="err"></small></label>
+          </div>
+          <label class="field"><span>Email or WhatsApp *</span><input name="contact" required autocomplete="email" placeholder="So we can confirm before publishing"><small class="err"></small></label>
+          <label class="field"><span>Product shown *</span><select name="product" id="ugc-product" required><option value="">Select from our catalogue</option></select><small class="err"></small></label>
+          <label class="field"><span>Caption *</span><textarea name="caption" required maxlength="300" rows="3" placeholder="What do you use it for?"></textarea><small class="err"></small></label>
+
+          <div class="field">
+            <span>Photo or video *</span>
+            <label class="dropzone" id="dropzone">
+              <span data-ui-icon="upload"></span>
+              <strong>Choose a file or drag it here</strong>
+              <small>JPG, PNG, WEBP, MP4, MOV or WEBM · up to 200 MB</small>
+              <input type="file" name="media" id="ugc-file" accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,video/webm" required>
+            </label>
+            <div class="preview" id="ugc-preview"></div>
+            <small class="err" id="file-err"></small>
+          </div>
+
+          <label class="check"><input type="checkbox" name="consent_rights" required><span>I created this content (or have permission from its creator) and it does not include anyone who has not agreed to appear in it. *</span></label>
+          <label class="check"><input type="checkbox" name="consent_usage" required><span>SikandarTech may publish this content on its website and social channels with credit to my handle. I can ask for it to be removed at any time. *</span></label>
+
+          <button type="submit" class="btn btn-block" id="ugc-submit">Submit for review</button>
+          <div class="notice" id="ugc-notice" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><span>© <span data-year></span> SikandarTech · Bringing tomorrow’s tech today</span><span><a href="products.html">Collection</a> · <a data-wa target="_blank" rel="noopener">WhatsApp</a></span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-ui-icon="brand-whatsapp"></a>
+
+  <script src="icons.js"></script>
+  <script src="catalog.js"></script>
+  <script src="script.js"></script>
+  <script src="shop-core.js"></script>
+  <script src="product-info.js"></script>
+  <script src="ugc-data.js"></script>
+  <script src="ugc.js"></script>
+</body>
+</html>
